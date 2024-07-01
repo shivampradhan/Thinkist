@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+requests
+huggingface_hub
+transformers
+nltk
