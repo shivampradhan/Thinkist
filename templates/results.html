@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Results</title>
+</head>
+<body>
+    <h1>Recommendation Results</h1>
+
+    {% for rec in recommendations %}
+    <h3>Recommendations for '{{ rec.Book }}':</h3>
+    <ul>
+        {% for book in rec.Recommendations %}
+        <li>{{ book }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <a href="/">Back to Selection</a>
+</body>
+</html>
